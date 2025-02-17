@@ -91,5 +91,10 @@ namespace Doan_Quanlycuahangnuochoa
             HighlightButton((Button)sender);
 
         }
+
+        private void ufrm_thongke1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

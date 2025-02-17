@@ -59,11 +59,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\UserForm\loaikhachhang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserForm\loaikhachhang.Designer.cs">
+      <DependentUpon>loaikhachhang.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\UserForm\thongtincalam.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UI\UserForm\thongtincalam.Designer.cs">
       <DependentUpon>thongtincalam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserForm\thongtinkhachhang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserForm\thongtinkhachhang.Designer.cs">
+      <DependentUpon>thongtinkhachhang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserForm\thongtinloaisanpham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserForm\thongtinloaisanpham.Designer.cs">
+      <DependentUpon>thongtinloaisanpham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UserForm\thongtinsanpham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserForm\thongtinsanpham.Designer.cs">
+      <DependentUpon>thongtinsanpham.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\UserForm\ufrmquanlysanpham.cs">
       <SubType>UserControl</SubType>
@@ -89,6 +113,12 @@
     <Compile Include="UI\UserForm\ufrm_quanlynhanvien.Designer.cs">
       <DependentUpon>ufrm_quanlynhanvien.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\UserForm\ufrm_quanlytaikhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\UserForm\ufrm_quanlytaikhoan.Designer.cs">
+      <DependentUpon>ufrm_quanlytaikhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\UserForm\ufrm_thongke.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -108,8 +138,20 @@
     <EmbeddedResource Include="UI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserForm\loaikhachhang.resx">
+      <DependentUpon>loaikhachhang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\UserForm\thongtincalam.resx">
       <DependentUpon>thongtincalam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserForm\thongtinkhachhang.resx">
+      <DependentUpon>thongtinkhachhang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserForm\thongtinloaisanpham.resx">
+      <DependentUpon>thongtinloaisanpham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserForm\thongtinsanpham.resx">
+      <DependentUpon>thongtinsanpham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\UserForm\ufrmquanlysanpham.resx">
       <DependentUpon>ufrmquanlysanpham.cs</DependentUpon>
@@ -122,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\UserForm\ufrm_quanlynhanvien.resx">
       <DependentUpon>ufrm_quanlynhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UserForm\ufrm_quanlytaikhoan.resx">
+      <DependentUpon>ufrm_quanlytaikhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\UserForm\ufrm_thongke.resx">
       <DependentUpon>ufrm_thongke.cs</DependentUpon>

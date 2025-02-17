@@ -55,6 +55,7 @@
             this.label1.Size = new System.Drawing.Size(138, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã phân quyền:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txt_maphanquyen
             // 
@@ -63,6 +64,7 @@
             this.txt_maphanquyen.Name = "txt_maphanquyen";
             this.txt_maphanquyen.Size = new System.Drawing.Size(282, 22);
             this.txt_maphanquyen.TabIndex = 2;
+            this.txt_maphanquyen.TextChanged += new System.EventHandler(this.txt_maphanquyen_TextChanged);
             // 
             // label2
             // 
@@ -73,6 +75,7 @@
             this.label2.Size = new System.Drawing.Size(145, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "Tên phân quyền:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -83,6 +86,7 @@
             this.label3.Size = new System.Drawing.Size(61, 22);
             this.label3.TabIndex = 4;
             this.label3.Text = "Mô tả:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -93,6 +97,7 @@
             this.label4.Size = new System.Drawing.Size(173, 22);
             this.label4.TabIndex = 5;
             this.label4.Text = "Mức lương làm việc:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txt_mucluonglamviec
             // 
@@ -100,6 +105,7 @@
             this.txt_mucluonglamviec.Name = "txt_mucluonglamviec";
             this.txt_mucluonglamviec.Size = new System.Drawing.Size(282, 22);
             this.txt_mucluonglamviec.TabIndex = 6;
+            this.txt_mucluonglamviec.TextChanged += new System.EventHandler(this.txt_mucluonglamviec_TextChanged);
             // 
             // txt_mota
             // 
@@ -107,6 +113,7 @@
             this.txt_mota.Name = "txt_mota";
             this.txt_mota.Size = new System.Drawing.Size(282, 22);
             this.txt_mota.TabIndex = 7;
+            this.txt_mota.TextChanged += new System.EventHandler(this.txt_mota_TextChanged);
             // 
             // txt_tenphanquyen
             // 
@@ -114,6 +121,7 @@
             this.txt_tenphanquyen.Name = "txt_tenphanquyen";
             this.txt_tenphanquyen.Size = new System.Drawing.Size(282, 22);
             this.txt_tenphanquyen.TabIndex = 8;
+            this.txt_tenphanquyen.TextChanged += new System.EventHandler(this.txt_tenphanquyen_TextChanged);
             // 
             // label5
             // 
@@ -124,6 +132,7 @@
             this.label5.Size = new System.Drawing.Size(363, 33);
             this.label5.TabIndex = 9;
             this.label5.Text = "THÔNG TIN PHÂN QUYỀN";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // dgv_phanquyen
             // 
@@ -136,6 +145,7 @@
             this.dgv_phanquyen.Size = new System.Drawing.Size(979, 204);
             this.dgv_phanquyen.TabIndex = 10;
             this.dgv_phanquyen.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_phanquyen_CellClick);
+            this.dgv_phanquyen.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_phanquyen_CellContentClick);
             this.dgv_phanquyen.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgv_phanquyen_CellFormatting);
             // 
             // btn_them
@@ -184,6 +194,7 @@
             this.btn_don.TabIndex = 15;
             this.btn_don.Text = "DỌN";
             this.btn_don.UseVisualStyleBackColor = true;
+            this.btn_don.Click += new System.EventHandler(this.btn_don_Click);
             // 
             // ufrm_phanquyen
             // 

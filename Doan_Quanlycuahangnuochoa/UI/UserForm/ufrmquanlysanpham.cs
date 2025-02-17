@@ -21,5 +21,24 @@ namespace Doan_Quanlycuahangnuochoa.UI.UserForm
         {
 
         }
+
+        
+       
+
+        private void tt_ttloaisp_Click_1(object sender, EventArgs e)
+        {
+            thongtinloaisanpham loaisp = new thongtinloaisanpham();
+            this.Controls.Clear();
+            this.Controls.Add(loaisp);
+            loaisp.Dock = DockStyle.Fill;
+        }
+
+        private void tt_thongtinsp_Click(object sender, EventArgs e)
+        {
+            thongtinsanpham sp = new thongtinsanpham();
+            this.Controls.Clear();
+            this.Controls.Add(sp);
+            sp.Dock = DockStyle.Fill;
+        }
     }
 }

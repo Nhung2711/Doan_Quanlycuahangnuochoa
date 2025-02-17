@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.ts_ttnv = new System.Windows.Forms.ToolStripLabel();
             this.ts_calam = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnsave_nv = new System.Windows.Forms.Button();
             this.btnadd_nv = new System.Windows.Forms.Button();
             this.txt_dtnv = new System.Windows.Forms.TextBox();
@@ -57,11 +55,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ts_ttnv = new System.Windows.Forms.ToolStripLabel();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvnhanvien)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -77,13 +77,6 @@
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // ts_ttnv
-            // 
-            this.ts_ttnv.Image = global::Doan_Quanlycuahangnuochoa.Properties.Resources.pngtree_jar_of_perfume_icon_simple_style_png_image_5264653_removebg_preview__1_1;
-            this.ts_ttnv.Name = "ts_ttnv";
-            this.ts_ttnv.Size = new System.Drawing.Size(159, 22);
-            this.ts_ttnv.Text = "Thông tin nhân viên";
-            // 
             // ts_calam
             // 
             this.ts_calam.Name = "ts_calam";
@@ -96,17 +89,6 @@
             this.toolStripLabel1.Name = "toolStripLabel1";
             this.toolStripLabel1.Size = new System.Drawing.Size(84, 22);
             this.toolStripLabel1.Text = "Chấm công";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Image = global::Doan_Quanlycuahangnuochoa.Properties.Resources.iconthoat_removebg_preview__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(999, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // btnsave_nv
             // 
@@ -125,6 +107,7 @@
             this.btnadd_nv.TabIndex = 6;
             this.btnadd_nv.Text = "Thêm";
             this.btnadd_nv.UseVisualStyleBackColor = true;
+            this.btnadd_nv.Click += new System.EventHandler(this.btnadd_nv_Click);
             // 
             // txt_dtnv
             // 
@@ -339,6 +322,25 @@
             this.panel2.Size = new System.Drawing.Size(1025, 242);
             this.panel2.TabIndex = 1;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::Doan_Quanlycuahangnuochoa.Properties.Resources.iconthoat_removebg_preview__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(999, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(47, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // ts_ttnv
+            // 
+            this.ts_ttnv.Image = global::Doan_Quanlycuahangnuochoa.Properties.Resources.pngtree_jar_of_perfume_icon_simple_style_png_image_5264653_removebg_preview__1_1;
+            this.ts_ttnv.Name = "ts_ttnv";
+            this.ts_ttnv.Size = new System.Drawing.Size(159, 22);
+            this.ts_ttnv.Text = "Thông tin nhân viên";
+            this.ts_ttnv.Click += new System.EventHandler(this.ts_ttnv_Click);
+            // 
             // ufrm_quanlynhanvien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -350,12 +352,12 @@
             this.Size = new System.Drawing.Size(1829, 890);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvnhanvien)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

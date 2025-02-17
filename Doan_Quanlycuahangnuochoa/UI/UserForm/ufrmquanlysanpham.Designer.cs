@@ -28,57 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStrip1.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ufrmquanlysanpham));
+            this.tt_thongtinloaisp = new System.Windows.Forms.ToolStrip();
+            this.tt_ttloaisp = new System.Windows.Forms.ToolStripButton();
+            this.tt_thongtinsp = new System.Windows.Forms.ToolStripButton();
+            this.tt_thongtinloaisp.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // tt_thongtinloaisp
             // 
-            this.button1.Location = new System.Drawing.Point(125, 215);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.tt_thongtinloaisp.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.tt_thongtinloaisp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tt_ttloaisp,
+            this.tt_thongtinsp});
+            this.tt_thongtinloaisp.Location = new System.Drawing.Point(0, 0);
+            this.tt_thongtinloaisp.Name = "tt_thongtinloaisp";
+            this.tt_thongtinloaisp.Size = new System.Drawing.Size(1133, 27);
+            this.tt_thongtinloaisp.TabIndex = 0;
+            this.tt_thongtinloaisp.Text = "toolStrip1";
             // 
-            // toolStrip1
+            // tt_ttloaisp
             // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.toolStripLabel2});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1133, 25);
-            this.toolStrip1.TabIndex = 1;
-            this.toolStrip1.Text = "toolStrip1";
+            this.tt_ttloaisp.Image = ((System.Drawing.Image)(resources.GetObject("tt_ttloaisp.Image")));
+            this.tt_ttloaisp.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tt_ttloaisp.Name = "tt_ttloaisp";
+            this.tt_ttloaisp.Size = new System.Drawing.Size(193, 24);
+            this.tt_ttloaisp.Text = "Thông tin loại sản phẩm";
+            this.tt_ttloaisp.Click += new System.EventHandler(this.tt_ttloaisp_Click_1);
             // 
-            // toolStripLabel1
+            // tt_thongtinsp
             // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(169, 22);
-            this.toolStripLabel1.Text = "Thông tin loại sản phẩm";
-            this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
-            // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(140, 22);
-            this.toolStripLabel2.Text = "Thông tin sản phẩm";
+            this.tt_thongtinsp.Image = ((System.Drawing.Image)(resources.GetObject("tt_thongtinsp.Image")));
+            this.tt_thongtinsp.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tt_thongtinsp.Name = "tt_thongtinsp";
+            this.tt_thongtinsp.Size = new System.Drawing.Size(164, 24);
+            this.tt_thongtinsp.Text = "Thông tin sản phẩm";
+            this.tt_thongtinsp.Click += new System.EventHandler(this.tt_thongtinsp_Click);
             // 
             // ufrmquanlysanpham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.tt_thongtinloaisp);
             this.Name = "ufrmquanlysanpham";
             this.Size = new System.Drawing.Size(1133, 843);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
+            this.tt_thongtinloaisp.ResumeLayout(false);
+            this.tt_thongtinloaisp.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,9 +81,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStrip tt_thongtinloaisp;
+        private System.Windows.Forms.ToolStripButton tt_ttloaisp;
+        private System.Windows.Forms.ToolStripButton tt_thongtinsp;
     }
 }

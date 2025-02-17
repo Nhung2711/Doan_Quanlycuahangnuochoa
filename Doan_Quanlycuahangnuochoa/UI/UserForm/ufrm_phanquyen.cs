@@ -159,5 +159,60 @@ namespace Doan_Quanlycuahangnuochoa.UI.UserForm
         {
 
         }
+
+        private void btn_don_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgv_phanquyen_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_tenphanquyen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_mota_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_mucluonglamviec_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_maphanquyen_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

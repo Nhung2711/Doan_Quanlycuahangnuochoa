@@ -42,8 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DAL\DAL_loaikhachhang.cs" />
     <Compile Include="DAL\DAL_Phanquyen.cs" />
     <Compile Include="DATABASE\database.cs" />
+    <Compile Include="MODEL\khachhang.cs" />
+    <Compile Include="MODEL\LoaiKH.cs" />
     <Compile Include="MODEL\Phanquyen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

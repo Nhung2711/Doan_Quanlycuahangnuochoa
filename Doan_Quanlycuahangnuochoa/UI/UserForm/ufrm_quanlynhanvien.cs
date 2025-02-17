@@ -26,5 +26,14 @@ namespace Doan_Quanlycuahangnuochoa.UI.UserForm
 
         }
 
+        private void ts_ttnv_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnadd_nv_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
