@@ -29,5 +29,10 @@ namespace Doan_Quanlycuahangnuochoa.UI.UserForm
             this.Controls.Add(Quanlysanpham);
             Quanlysanpham.Dock = DockStyle.Fill;
         }
+
+        private void btn_don_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

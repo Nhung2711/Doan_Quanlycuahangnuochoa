@@ -30,8 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ufrmquanlysanpham));
             this.tt_thongtinloaisp = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.tt_ttloaisp = new System.Windows.Forms.ToolStripButton();
             this.tt_thongtinsp = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.tt_thongtinloaisp.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,12 +42,21 @@
             this.tt_thongtinloaisp.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.tt_thongtinloaisp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tt_ttloaisp,
-            this.tt_thongtinsp});
+            this.tt_thongtinsp,
+            this.toolStripButton2,
+            this.toolStripLabel1});
             this.tt_thongtinloaisp.Location = new System.Drawing.Point(0, 0);
             this.tt_thongtinloaisp.Name = "tt_thongtinloaisp";
             this.tt_thongtinloaisp.Size = new System.Drawing.Size(1133, 27);
             this.tt_thongtinloaisp.TabIndex = 0;
             this.tt_thongtinloaisp.Text = "toolStrip1";
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(164, 24);
+            this.toolStripLabel1.Text = "Thông tin nhà cung cấp";
+            this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click_1);
             // 
             // tt_ttloaisp
             // 
@@ -64,6 +75,15 @@
             this.tt_thongtinsp.Size = new System.Drawing.Size(164, 24);
             this.tt_thongtinsp.Text = "Thông tin sản phẩm";
             this.tt_thongtinsp.Click += new System.EventHandler(this.tt_thongtinsp_Click);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(29, 24);
+            this.toolStripButton2.Text = "toolStripButton2";
             // 
             // ufrmquanlysanpham
             // 
@@ -84,5 +104,7 @@
         private System.Windows.Forms.ToolStrip tt_thongtinloaisp;
         private System.Windows.Forms.ToolStripButton tt_ttloaisp;
         private System.Windows.Forms.ToolStripButton tt_thongtinsp;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
     }
 }

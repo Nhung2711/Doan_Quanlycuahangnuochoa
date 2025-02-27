@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn_sanpham = new System.Windows.Forms.Button();
             this.btn_qlphanquyen = new System.Windows.Forms.Button();
             this.btn_nhanvien = new System.Windows.Forms.Button();
@@ -39,13 +40,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.ufrm_thongke1 = new Doan_Quanlycuahangnuochoa.UI.UserForm.ufrm_thongke();
             this.ufrmquanlysanpham1 = new Doan_Quanlycuahangnuochoa.UI.UserForm.ufrmquanlysanpham();
             this.ufrm_phanquyen1 = new Doan_Quanlycuahangnuochoa.UI.UserForm.ufrm_phanquyen();
             this.ufrm_quanlynhanvien1 = new Doan_Quanlycuahangnuochoa.UI.UserForm.ufrm_quanlynhanvien();
             this.ufrm_quanlykhachhang1 = new Doan_Quanlycuahangnuochoa.UI.UserForm.ufrm_quanlykhachhang();
+            this.btn_taikhoan = new System.Windows.Forms.Button();
+            this.ufrm_mataikhoan1 = new Doan_Quanlycuahangnuochoa.UI.UserForm.ufrm_mataikhoan();
+            this.ufrm_thongke1 = new Doan_Quanlycuahangnuochoa.UI.UserForm.ufrm_thongke();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -54,8 +55,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.panel1.Controls.Add(this.btn_taikhoan);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.btn_sanpham);
             this.panel1.Controls.Add(this.btn_qlphanquyen);
             this.panel1.Controls.Add(this.btn_nhanvien);
@@ -68,6 +69,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(273, 843);
             this.panel1.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(3, 476);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(270, 53);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "QUẢN LÝ HÓA ĐƠN";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // btn_sanpham
             // 
@@ -184,39 +197,6 @@
             this.label2.Size = new System.Drawing.Size(0, 19);
             this.label2.TabIndex = 3;
             // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(3, 358);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(270, 53);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "QUẢN LÝ TÀI KHOẢN";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(3, 476);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(270, 53);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "QUẢN LÝ HÓA ĐƠN";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // ufrm_thongke1
-            // 
-            this.ufrm_thongke1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ufrm_thongke1.Location = new System.Drawing.Point(273, 0);
-            this.ufrm_thongke1.Name = "ufrm_thongke1";
-            this.ufrm_thongke1.Size = new System.Drawing.Size(1133, 843);
-            this.ufrm_thongke1.TabIndex = 6;
-            this.ufrm_thongke1.Load += new System.EventHandler(this.ufrm_thongke1_Load);
-            // 
             // ufrmquanlysanpham1
             // 
             this.ufrmquanlysanpham1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -249,11 +229,41 @@
             this.ufrm_quanlykhachhang1.Size = new System.Drawing.Size(1133, 843);
             this.ufrm_quanlykhachhang1.TabIndex = 2;
             // 
+            // btn_taikhoan
+            // 
+            this.btn_taikhoan.FlatAppearance.BorderSize = 0;
+            this.btn_taikhoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_taikhoan.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_taikhoan.Location = new System.Drawing.Point(3, 358);
+            this.btn_taikhoan.Name = "btn_taikhoan";
+            this.btn_taikhoan.Size = new System.Drawing.Size(270, 53);
+            this.btn_taikhoan.TabIndex = 14;
+            this.btn_taikhoan.Text = "QUẢN LÝ TÀI KHOẢN";
+            this.btn_taikhoan.UseVisualStyleBackColor = true;
+            this.btn_taikhoan.Click += new System.EventHandler(this.btn_taikhoan_Click);
+            // 
+            // ufrm_mataikhoan1
+            // 
+            this.ufrm_mataikhoan1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ufrm_mataikhoan1.Location = new System.Drawing.Point(273, 0);
+            this.ufrm_mataikhoan1.Name = "ufrm_mataikhoan1";
+            this.ufrm_mataikhoan1.Size = new System.Drawing.Size(1133, 843);
+            this.ufrm_mataikhoan1.TabIndex = 6;
+            // 
+            // ufrm_thongke1
+            // 
+            this.ufrm_thongke1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ufrm_thongke1.Location = new System.Drawing.Point(273, 0);
+            this.ufrm_thongke1.Name = "ufrm_thongke1";
+            this.ufrm_thongke1.Size = new System.Drawing.Size(1133, 843);
+            this.ufrm_thongke1.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(1406, 843);
             this.Controls.Add(this.ufrm_thongke1);
+            this.Controls.Add(this.ufrm_mataikhoan1);
             this.Controls.Add(this.ufrmquanlysanpham1);
             this.Controls.Add(this.ufrm_phanquyen1);
             this.Controls.Add(this.ufrm_quanlynhanvien1);
@@ -286,10 +296,11 @@
         private UI.UserForm.ufrm_quanlynhanvien ufrm_quanlynhanvien1;
         private UI.UserForm.ufrm_phanquyen ufrm_phanquyen1;
         private UI.UserForm.ufrmquanlysanpham ufrmquanlysanpham1;
-        private UI.UserForm.ufrm_thongke ufrm_thongke1;
         private System.Windows.Forms.Button btn_sanpham;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_taikhoan;
+        private UI.UserForm.ufrm_mataikhoan ufrm_mataikhoan1;
+        private UI.UserForm.ufrm_thongke ufrm_thongke1;
     }
 }
 

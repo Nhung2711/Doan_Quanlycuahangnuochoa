@@ -73,6 +73,7 @@
             this.btn_don.TabIndex = 47;
             this.btn_don.Text = "DỌN";
             this.btn_don.UseVisualStyleBackColor = true;
+            this.btn_don.Click += new System.EventHandler(this.btn_don_Click);
             // 
             // txt_timkiem
             // 

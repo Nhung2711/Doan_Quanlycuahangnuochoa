@@ -61,7 +61,7 @@ namespace Doan_Quanlycuahangnuochoa.UI.UserForm
             }
             catch (Exception ex)
             {
-                MessageBox.Show("vui long nhap du thong tin:"+ex, "Thông báo ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Vui lòng nhâppj đầy đủ thông tin!"+ex, "Thông báo ", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -95,7 +95,7 @@ namespace Doan_Quanlycuahangnuochoa.UI.UserForm
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi " + ex.Message, "Thông báo ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi " + ex, "Thông báo ", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

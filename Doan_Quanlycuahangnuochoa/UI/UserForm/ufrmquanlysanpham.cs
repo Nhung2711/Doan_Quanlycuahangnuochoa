@@ -40,5 +40,13 @@ namespace Doan_Quanlycuahangnuochoa.UI.UserForm
             this.Controls.Add(sp);
             sp.Dock = DockStyle.Fill;
         }
+
+        private void toolStripLabel1_Click_1(object sender, EventArgs e)
+        {
+            Nhacungcap ncc = new Nhacungcap();
+            this.Controls.Clear();
+            this.Controls.Add(ncc);
+            ncc.Dock = DockStyle.Fill;
+        }
     }
 }

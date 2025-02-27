@@ -41,8 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL_Calam.cs" />
+    <Compile Include="BLL_Chamconglamviec.cs" />
+    <Compile Include="BLL_Khachhang.cs" />
     <Compile Include="BLL_Loaikhachhang.cs" />
+    <Compile Include="BLL_Loaisanpham.cs" />
+    <Compile Include="BLL_Nhacungcap.cs" />
+    <Compile Include="BLL_Nhanvien.cs" />
+    <Compile Include="BLL_Phancongcalam.cs" />
     <Compile Include="BLL_Phanquyen.cs" />
+    <Compile Include="BLL_Taikhoan.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

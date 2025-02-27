@@ -40,7 +40,7 @@ namespace BLL
         {
             //kiem tra du lieu
             if (phanquyen.ID_PHANQUYEN<=0||string.IsNullOrWhiteSpace(phanquyen.TENQUYEN) || string.IsNullOrWhiteSpace(phanquyen.MoTa) || phanquyen.MUCLUONGLAMVIEC <= 0)
-                throw new Exception("vui lòng nhập đầy đủ thông tin trước khi thay đỏi thông tin phân quyền");
+                throw new Exception("Vui lòng nhập đầy đủ thông tin trước khi thay đỏi thông tin phân quyền");
             
             //tra ve ket qua
             return phanquyenDAL.suaphanquyen(phanquyen);

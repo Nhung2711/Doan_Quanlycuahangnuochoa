@@ -29,18 +29,20 @@ namespace Doan_Quanlycuahangnuochoa.UI.UserForm
 
         private void tt_loaikh_Click(object sender, EventArgs e)
         {
-            loaikhachhang lkh = new loaikhachhang();
+            loaikhachhang loaikh = new loaikhachhang();
             this.Controls.Clear();
-            this.Controls.Add(lkh);
-            lkh.Dock = DockStyle.Fill;
+            this.Controls.Add(loaikh);
+            loaikh.Dock = DockStyle.Fill;
+
         }
 
         private void tt_ttkhachhang_Click(object sender, EventArgs e)
         {
-            thongtinkhachhang ttkh = new thongtinkhachhang();
+            thongtinkhachhang khachhang = new thongtinkhachhang();
             this.Controls.Clear();
-            this.Controls.Add(ttkh);
-            ttkh.Dock = DockStyle.Fill;
+            this.Controls.Add(khachhang);
+            khachhang.Dock = DockStyle.Fill;
+
 
         }
     }

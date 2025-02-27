@@ -43,6 +43,7 @@ namespace Doan_Quanlycuahangnuochoa
             ufrm_quanlynhanvien1.Visible = false;
             ufrm_phanquyen1.Visible = false;
             ufrmquanlysanpham1.Visible = false;
+            ufrm_mataikhoan1.Visible = false;
             HighlightButton((Button)sender);
         }
 
@@ -53,6 +54,7 @@ namespace Doan_Quanlycuahangnuochoa
             ufrm_quanlynhanvien1.Visible = false;
             ufrm_phanquyen1.Visible = false;
             ufrmquanlysanpham1.Visible = false;
+            ufrm_mataikhoan1.Visible = false;
             HighlightButton((Button)sender);
         }
 
@@ -63,6 +65,7 @@ namespace Doan_Quanlycuahangnuochoa
             ufrm_quanlynhanvien1.Visible = true;
             ufrm_phanquyen1.Visible = false;
             ufrmquanlysanpham1.Visible = false;
+            ufrm_mataikhoan1.Visible = false;
             HighlightButton((Button)sender);
         }
 
@@ -73,7 +76,10 @@ namespace Doan_Quanlycuahangnuochoa
             ufrm_quanlynhanvien1.Visible = false;
             ufrm_phanquyen1.Visible = true;
             ufrmquanlysanpham1.Visible = false;
+            ufrm_mataikhoan1.Visible = false;
+
             HighlightButton((Button)sender);
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -88,6 +94,7 @@ namespace Doan_Quanlycuahangnuochoa
             ufrm_quanlynhanvien1.Visible = false;
             ufrm_phanquyen1.Visible = false;
             ufrmquanlysanpham1.Visible = true;
+            ufrm_mataikhoan1.Visible = false;
             HighlightButton((Button)sender);
 
         }
@@ -95,6 +102,22 @@ namespace Doan_Quanlycuahangnuochoa
         private void ufrm_thongke1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_taikhoan_Click(object sender, EventArgs e)
+        {
+            ufrm_thongke1.Visible = false;
+            ufrm_quanlykhachhang1.Visible = false;
+            ufrm_quanlynhanvien1.Visible = false;
+            ufrm_mataikhoan1.Visible = true;
+            ufrm_phanquyen1.Visible = false;
+            ufrmquanlysanpham1.Visible = false;
+            HighlightButton((Button)sender);
         }
     }
 }

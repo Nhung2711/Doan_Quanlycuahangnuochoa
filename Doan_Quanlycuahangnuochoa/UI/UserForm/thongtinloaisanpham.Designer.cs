@@ -101,6 +101,7 @@
             this.dgv_loaisanpham.RowTemplate.Height = 24;
             this.dgv_loaisanpham.Size = new System.Drawing.Size(979, 204);
             this.dgv_loaisanpham.TabIndex = 36;
+            this.dgv_loaisanpham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_loaisanpham_CellClick);
             this.dgv_loaisanpham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_loaikhachhang_CellContentClick);
             // 
             // label5
@@ -179,6 +180,7 @@
             this.Controls.Add(this.txt_maloaisanpham);
             this.Name = "thongtinloaisanpham";
             this.Size = new System.Drawing.Size(1133, 843);
+            this.Load += new System.EventHandler(this.thongtinloaisanpham_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_loaisanpham)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

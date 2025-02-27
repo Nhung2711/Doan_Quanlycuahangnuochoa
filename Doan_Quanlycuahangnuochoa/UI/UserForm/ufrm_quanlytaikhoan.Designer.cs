@@ -28,42 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txt_sdt = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.btn_don = new System.Windows.Forms.Button();
             this.txt_timkiem = new System.Windows.Forms.TextBox();
             this.btn_xoa = new System.Windows.Forms.Button();
             this.btn_sua = new System.Windows.Forms.Button();
             this.btn_them = new System.Windows.Forms.Button();
-            this.dgv_loaikhachhang = new System.Windows.Forms.DataGridView();
+            this.dgv_taikhoan = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_maloaikhachhang = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt_password = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.cb_tenquyen = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_loaikhachhang)).BeginInit();
+            this.txt_password = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_taikhoan)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txt_sdt
-            // 
-            this.txt_sdt.Location = new System.Drawing.Point(171, 259);
-            this.txt_sdt.Name = "txt_sdt";
-            this.txt_sdt.Size = new System.Drawing.Size(282, 22);
-            this.txt_sdt.TabIndex = 45;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(32, 258);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 22);
-            this.label3.TabIndex = 44;
-            this.label3.Text = "Số điện thoại:";
             // 
             // btn_don
             // 
@@ -73,6 +54,7 @@
             this.btn_don.TabIndex = 43;
             this.btn_don.Text = "DỌN";
             this.btn_don.UseVisualStyleBackColor = true;
+            this.btn_don.Click += new System.EventHandler(this.btn_don_Click);
             // 
             // txt_timkiem
             // 
@@ -80,6 +62,7 @@
             this.txt_timkiem.Name = "txt_timkiem";
             this.txt_timkiem.Size = new System.Drawing.Size(477, 22);
             this.txt_timkiem.TabIndex = 42;
+            this.txt_timkiem.TextChanged += new System.EventHandler(this.txt_timkiem_TextChanged);
             // 
             // btn_xoa
             // 
@@ -89,6 +72,7 @@
             this.btn_xoa.TabIndex = 41;
             this.btn_xoa.Text = "XÓA";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_sua
             // 
@@ -98,6 +82,7 @@
             this.btn_sua.TabIndex = 40;
             this.btn_sua.Text = "SỬA";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_them
             // 
@@ -107,17 +92,19 @@
             this.btn_them.TabIndex = 39;
             this.btn_them.Text = "THÊM";
             this.btn_them.UseVisualStyleBackColor = true;
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
-            // dgv_loaikhachhang
+            // dgv_taikhoan
             // 
-            this.dgv_loaikhachhang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgv_loaikhachhang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_loaikhachhang.Location = new System.Drawing.Point(65, 392);
-            this.dgv_loaikhachhang.Name = "dgv_loaikhachhang";
-            this.dgv_loaikhachhang.RowHeadersWidth = 51;
-            this.dgv_loaikhachhang.RowTemplate.Height = 24;
-            this.dgv_loaikhachhang.Size = new System.Drawing.Size(979, 204);
-            this.dgv_loaikhachhang.TabIndex = 38;
+            this.dgv_taikhoan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_taikhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_taikhoan.Location = new System.Drawing.Point(65, 392);
+            this.dgv_taikhoan.Name = "dgv_taikhoan";
+            this.dgv_taikhoan.RowHeadersWidth = 51;
+            this.dgv_taikhoan.RowTemplate.Height = 24;
+            this.dgv_taikhoan.Size = new System.Drawing.Size(979, 204);
+            this.dgv_taikhoan.TabIndex = 38;
+            this.dgv_taikhoan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_taikhoan_CellClick);
             // 
             // label5
             // 
@@ -168,24 +155,17 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(34, 303);
+            this.label4.Location = new System.Drawing.Point(32, 258);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(91, 22);
             this.label4.TabIndex = 46;
             this.label4.Text = "Mật khẩu:";
             // 
-            // txt_password
-            // 
-            this.txt_password.Location = new System.Drawing.Point(171, 303);
-            this.txt_password.Name = "txt_password";
-            this.txt_password.Size = new System.Drawing.Size(282, 22);
-            this.txt_password.TabIndex = 47;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(32, 349);
+            this.label6.Location = new System.Drawing.Point(34, 307);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(100, 22);
             this.label6.TabIndex = 48;
@@ -194,10 +174,17 @@
             // cb_tenquyen
             // 
             this.cb_tenquyen.FormattingEnabled = true;
-            this.cb_tenquyen.Location = new System.Drawing.Point(171, 349);
+            this.cb_tenquyen.Location = new System.Drawing.Point(171, 308);
             this.cb_tenquyen.Name = "cb_tenquyen";
             this.cb_tenquyen.Size = new System.Drawing.Size(282, 24);
             this.cb_tenquyen.TabIndex = 49;
+            // 
+            // txt_password
+            // 
+            this.txt_password.Location = new System.Drawing.Point(171, 259);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(282, 22);
+            this.txt_password.TabIndex = 47;
             // 
             // ufrm_mataikhoan
             // 
@@ -207,14 +194,12 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txt_sdt);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_don);
             this.Controls.Add(this.txt_timkiem);
             this.Controls.Add(this.btn_xoa);
             this.Controls.Add(this.btn_sua);
             this.Controls.Add(this.btn_them);
-            this.Controls.Add(this.dgv_loaikhachhang);
+            this.Controls.Add(this.dgv_taikhoan);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.label2);
@@ -222,30 +207,28 @@
             this.Controls.Add(this.label1);
             this.Name = "ufrm_mataikhoan";
             this.Size = new System.Drawing.Size(1133, 843);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_loaikhachhang)).EndInit();
+            this.Load += new System.EventHandler(this.ufrm_mataikhoan_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_taikhoan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txt_sdt;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_don;
         private System.Windows.Forms.TextBox txt_timkiem;
         private System.Windows.Forms.Button btn_xoa;
         private System.Windows.Forms.Button btn_sua;
         private System.Windows.Forms.Button btn_them;
-        private System.Windows.Forms.DataGridView dgv_loaikhachhang;
+        private System.Windows.Forms.DataGridView dgv_taikhoan;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_maloaikhachhang;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cb_tenquyen;
+        private System.Windows.Forms.TextBox txt_password;
     }
 }

@@ -28,11 +28,37 @@ namespace Doan_Quanlycuahangnuochoa.UI.UserForm
 
         private void ts_ttnv_Click(object sender, EventArgs e)
         {
-            
+            thongtinnhanvien nhanvien = new thongtinnhanvien();
+            this.Controls.Clear();
+            this.Controls.Add(nhanvien);
+            nhanvien.Dock = DockStyle.Fill;
         }
 
         private void btnadd_nv_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void tsphancongcalam_Click(object sender, EventArgs e)
+        {
+           Phancongcalam phancong = new Phancongcalam();
+            this.Controls.Clear();
+            this.Controls.Add(phancong);
+            phancong.Dock = DockStyle.Fill;
+
+        }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+            Chamconglamviec chamcong= new Chamconglamviec();
+            this.Controls.Clear();
+            this.Controls.Add(chamcong);
+            chamcong.Dock = DockStyle.Fill;
+        }
+
+        private void ufrm_quanlynhanvien_Load(object sender, EventArgs e)
+        {
+
 
         }
     }
